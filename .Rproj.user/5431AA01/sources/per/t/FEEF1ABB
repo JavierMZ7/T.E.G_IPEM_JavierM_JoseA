@@ -1,0 +1,28 @@
+{
+    "id": "FEEF1ABB",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1793385685387.0,
+    "source_on_save": false,
+    "relative_order": 13,
+    "properties": {
+        "id": "d850b70aec554b5d9941b3877f5c5c70",
+        "name": "resultados_m",
+        "title": "resultados_m",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 0,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1793385685387,
+    "read_only": false,
+    "read_only_alternatives": []
+}
