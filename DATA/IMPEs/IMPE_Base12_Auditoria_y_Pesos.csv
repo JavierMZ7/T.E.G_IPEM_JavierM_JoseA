@@ -1,0 +1,13 @@
+Variable,Dimension_Teorica,Autovector_CP1,Carga_CP1,Peso_IMPE12_Media_Pct,Error_Entre_Imp_SD,KMO_Individual_MSA,Cor_Item_Total,Alfa_Si_Se_Elimina
+tech_id_pib,Financiera,0.3447,0.8288,11.88,0.081,0.8777,0.7597,0.8815
+tech_investigad,Tecnológica,0.3353,0.8062,11.25,0.119,0.8575,0.7309,0.883
+fin_cred_priv_pib,Financiera,0.3298,0.7929,10.88,0.075,0.9012,0.7364,0.8827
+prod_eci,Productiva,0.3117,0.7494,9.72,0.1,0.902,0.6668,0.8864
+tech_mnf_val_added,Tecnológica,0.3101,0.7454,9.61,0.085,0.8954,0.6683,0.8863
+prod_exp_total,Productiva,0.3074,0.7391,9.45,0.09,0.8593,0.6891,0.8852
+tech_exp_serv_dig,Tecnológica,0.2993,0.7196,8.96,0.102,0.8361,0.6612,0.8867
+prod_pib_pcap_ppa,Productiva,0.2852,0.6856,8.13,0.068,0.9043,0.5982,0.8899
+fin_regalias_rec,Financiera,0.2586,0.6218,6.69,0.07,0.8185,0.5525,0.8923
+tech_exp_alta,Tecnológica,0.2255,0.5423,5.09,0.224,0.9591,0.4688,0.8965
+tech_patentes_tic,Tecnológica,0.21560000000000001,0.5183,4.65,0.233,0.7984,0.4465,0.8976
+fin_mkt_cap_pib,Productiva,0.1921,0.4618,3.69,0.116,0.8141,0.3917,0.9003
