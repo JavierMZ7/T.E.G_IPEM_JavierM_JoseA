@@ -186,9 +186,9 @@ filtrar_paises_na <- function(df, vars_modelo, umbral = UMBRAL_NA_PAIS, nombre_f
 # Construcción de las 4 Familias
 familias <- list(
   "1A_Base16_Completa"   = list(df = panel_proc, vars = vars_base16),
-  "1B_Base16_Depurada25" = list(df = filtrar_paises_na(panel_proc, vars_base16, UMBRAL_NA_PAIS, "1B_Base16"), vars = vars_base16),
+  "1B_Base16_country_scrub" = list(df = filtrar_paises_na(panel_proc, vars_base16, UMBRAL_NA_PAIS, "1B_Base16"), vars = vars_base16),
   "2A_Base12_Completa"   = list(df = panel_proc, vars = vars_base12),
-  "2B_Base12_Depurada25" = list(df = filtrar_paises_na(panel_proc, vars_base12, UMBRAL_NA_PAIS, "2B_Base12"), vars = vars_base12)
+  "2B_Base12_country_scrub" = list(df = filtrar_paises_na(panel_proc, vars_base12, UMBRAL_NA_PAIS, "2B_Base12"), vars = vars_base12)
 )
 
 for (nom in names(familias)) {
