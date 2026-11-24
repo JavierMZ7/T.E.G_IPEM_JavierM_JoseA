@@ -216,8 +216,8 @@ estandarizar_z <- function(df, vars) {
 }
 
 # 4.2 Interpolación lineal estricta (solo huecos internos <= maxgap años)
-interpolar_panel <- function(df, vars, maxgap = MAX_GAP_INTERP) {
-  df %>%
+interpolar_panel <- function(df, vars, maxgap = MAX_GAP_INTERP) 
+  { df %>%
     group_by(iso3c) %>%
     arrange(year, .by_group = TRUE) %>%
     mutate(across(
@@ -304,7 +304,7 @@ evaluar_y_puntuar_indice <- function(nombre_indice, familia_nom, metodo_nom,
     R <- combinar_cor_fisher(lista_R)
     n_eff <- nrow(lista_z[[1]])
   }
-
+## EIENVALE
   # 5.1 PCA formal (NO manual) mediante psych::principal() sobre la matriz R
   n_fact <- min(3, length(vars_modelo))
   pca_fit <- psych::principal(r = R, nfactors = n_fact, rotate = "none", scores = FALSE)
@@ -535,17 +535,17 @@ agregar_hoja <- function(wb, nombre_hoja, df) {
   openxlsx::setColWidths(wb, nombre_hoja, cols = 1:ncol(df), widths = "auto")
 }
 
-agregar_hoja(wb, "1_Estadisticos_Indices",     tabla_stats)
-agregar_hoja(wb, "2_PCA_Cargas_CP1",           comp_pca_cp1)
-agregar_hoja(wb, "3_PCA_Pesos_CP1",            comp_pca_pesos)
-agregar_hoja(wb, "4_PCA_Detalle_Completo",     tabla_cargas)
-agregar_hoja(wb, "5_Congruencia_Rankings",     congruencia_indices)
-agregar_hoja(wb, "6_Matriz_Cor_Rankings",      matriz_cor_rankings_df)
-agregar_hoja(wb, "7_Cor_Rankings_Por_Anio",    cor_rankings_detalle_anio)
-agregar_hoja(wb, "8_Rangos_Pais_Familia",      rangos_por_familia)
-agregar_hoja(wb, "9_Scores_Paises_20_Indices", panel_ancho_scores)
-agregar_hoja(wb, "10_Ranks_Paises_20_Indices", panel_ancho_ranks)
+agregar_hoja(wb, "1_Estadisticos_Indices",     tabla_stats),
+agregar_hoja(wb, "2_PCA_Cargas_CP1",           comp_pca_cp1),
+agregar_hoja(wb, "3_PCA_Pesos_CP1",            comp_pca_pesos),
+agregar_hoja(wb, "4_PCA_Detalle_Completo",     tabla_cargas),
+agregar_hoja(wb, "5_Congruencia_Rankings",     congruencia_indices),
+agregar_hoja(wb, "6_Matriz_Cor_Rankings",      matriz_cor_rankings_df),
+agregar_hoja(wb, "7_Cor_Rankings_Por_Anio",    cor_rankings_detalle_anio),
+agregar_hoja(wb, "8_Rangos_Pais_Familia",      rangos_por_familia),
+agregar_hoja(wb, "9_Scores_Paises_20_Indices", panel_ancho_scores),
+agregar_hoja(wb, "10_Ranks_Paises_20_Indices", panel_ancho_ranks),
 
-openxlsx::saveWorkbook(wb, ARCHIVO_SALIDA, overwrite = TRUE)
+openxlsx::saveWorkbook(wb, ARCHIVO_SALIDA, overwrite = TRUE),
 
 message("¡Proceso completado con éxito! Archivo generado: ", ARCHIVO_SALIDA)
